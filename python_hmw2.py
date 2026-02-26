@@ -256,7 +256,7 @@ if num % 3 == 0 and num % 5 == 0:
 else:
     print("The number is not divisible by both 3 and 5.")
 
-#7. Write a program that checks if the sum of two numbers is greater than 50.8. Create a program that checks if a given number is between 10 and 20 (inclusive)
+#7. Write a program that checks if the sum of two numbers is greater than 50.
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
 
@@ -264,3 +264,12 @@ if a + b > 50:
     print("The sum is greater than 50.")
 else:
     print("The sum is not greater than 50.")
+
+# 8. Create a program that checks if a given number is between 10 and 20 (inclusive)
+a = int(input("Enter number: "))
+
+
+if 10<=a<=20:
+    print("Number is in between 10 and 20.")
+else:
+    print("Number is not in between 10 and 20.")

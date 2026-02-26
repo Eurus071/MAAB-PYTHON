@@ -10,16 +10,16 @@ Created on Fri Jan 16 15:47:13 2026
 #1. <a href="https://pynative.com/python-if-else-and-for-loop-quiz/">Loops quiz</a>
 
 #2.  What is the difference between the continue and break statements in Python?
-Difference between continue and break
-break
-Immediately stops the loop completely and exits it.
-continue
-Skips the current iteration and moves to the next iteration of the loop.
+#Difference between continue and break
+#break
+#Immediately stops the loop completely and exits it.
+#continue
+#Skips the current iteration and moves to the next iteration of the loop.
 #3. Can you explain the difference between for loop and while loop?
-for loop	while loop
-Used when number of iterations is known
-while loop
-Used when condition-based
+#for loop	
+#Used when number of iterations is known
+#while loop
+#Used when condition-based
 #4. How would you implement a nested for loop system? Provide an example.
 for i in range(1, 4):
     for j in range(1, 4):
@@ -75,19 +75,27 @@ output:
     9
     16
 """
+def square_of_num(n):
+    list=[]
+    for i in range(n):
+        list.append(i**2)
+    return list
+
+number=int(input("Enter the number: "))
+square_of_num(number)
+
 """
-**3.** `txt` nomli string saqlovchi o'zgaruvchi berilgan. `txt`dagi har uchinchi belgidan keyin pastgi chiziqcha (underscore) qo'yilsin. Agar belgi unli harf yoki orqasidan ostki chiziqcha qo'yilgan harf bo'lsa, ostki chiziqcha keyingi harfdan keyin qo'yilsin. Agar belgi satrdagi oxirgi belgi bo'lsa chiziqcha qo'yilmasin.
+**3.** `txt` nomli string saqlovchi o'zgaruvchi berilgan.
+`txt`dagi har uchinchi belgidan keyin pastgi chiziqcha
+(underscore) qo'yilsin. Agar belgi unli harf yoki orqasidan
+ostki chiziqcha qo'yilgan harf bo'lsa, ostki chiziqcha keyingi
+harfdan keyin qo'yilsin. Agar belgi satrdagi oxirgi belgi bo'lsa chiziqcha qo'yilmasin.
 
 
 input: hello
 output: hel_lo
-
-
-
 input: assalom
 output: ass_alom
-
-
 
 input: abcabcdabcdeabcdefabcdefg
 output: abc_abcd_abcdeab_cdef_abcdefg
